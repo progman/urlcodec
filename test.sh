@@ -38,9 +38,9 @@ function test1()
 	local OUT;
 	OUT="$(echo -n 'Hello world!' | run_app -e)";
 
-	if [ "${OUT}" != "%48%65%6c%6c%6f%20%77%6f%72%6c%64%21" ];
+	if [ "${OUT}" != "Hello%20world%21" ];
 	then
-		echo "ERROR: result different1...";
+		echo "ERROR: result different...";
 		exit 1;
 	fi
 
@@ -55,7 +55,7 @@ function test2()
 
 	if [ "${OUT}" != "Hello world!" ];
 	then
-		echo "ERROR: result different2...";
+		echo "ERROR: result different...";
 		exit 1;
 	fi
 
