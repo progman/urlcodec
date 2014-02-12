@@ -1,0 +1,7 @@
+URL encode and decode
+
+
+1) Get this : git clone https://github.com/progman/urlcodec.git
+2) Make this: git submodule update --init && make x64 && ./test.sh
+3) Use this : echo 'Hello%20world%21' | urlcodec -d
+4) Enjoy!
